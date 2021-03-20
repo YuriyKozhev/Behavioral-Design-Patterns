@@ -1,11 +1,9 @@
-class State(object):
+from abc import ABC, abstractmethod
+
+class State(ABC):
     def __init__(self) -> None:
         pass
 
+    @abstractmethod
     def handle(self) -> None:
         pass
-
-
-if __name__ == "__main__":
-    state = State()
-    state.handle()
