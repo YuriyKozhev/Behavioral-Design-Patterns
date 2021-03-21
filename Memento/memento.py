@@ -1,6 +1,6 @@
-class Memento(object):
-    def __init__(self, content) -> None:
-        self.CONTENT = content
+from abc import ABC, abstractmethod
 
-    def get_saved_state(self):
-        return self.CONTENT
+class Memento(object):
+    @abstractmethod
+    def get_state_name(self):
+        pass

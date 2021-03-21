@@ -1,33 +1,25 @@
-from memento import *
-from originator import *
+from memento import Memento
+from originator import Originator
 
 
 class Caretaker(object):
-    def __init__(self):
-        pass
+    def __init__(self) -> None:
+        self._states: List[Memento] = list()
 
-    def _print_state(self, originator: Originator) -> None:
-        print(f'Originator content = {originator.get_content()}')
+    def save(self, state: Memento) -> None:
+        print(f"Saving originator state with name = {state.get_state_name()}")
+        self._states.append(state)
 
-    def do_operations(self) -> None:
-        states: List[Memento] = list()
-        originator = Originator()
-        originator.set_content("c1")
-        states.append(originator.create_state())
-        originator.set_content("c2")
-        states.append(originator.create_state())
-        originator.set_content("c3")
-        self._print_state(originator)
-        originator.restore_state(states.pop())
-        self._print_state(originator)
-        originator.restore_state(states.pop())
-        self._print_state(originator)
+    def load(self) -> Memento:
+        print(f"Loading previous originator state")
+        try:
+            return self._states.pop()
+        except:
+            print("Originator is in initial state")
 
 
 if __name__ == "__main__":
     caretaker = Caretaker()
-    caretaker.do_operations()
-
     
 
     
