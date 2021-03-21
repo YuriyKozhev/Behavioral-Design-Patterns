@@ -2,6 +2,7 @@
 
 The memento pattern provides the ability to restore an object to its previous state, that is undo via rollback.
 
+![memento-pattern-uml](./images/memento-pattern-uml.svg)
 
 ### Output of command: python main.py:
 ```
