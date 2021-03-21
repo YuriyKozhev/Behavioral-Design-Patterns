@@ -4,16 +4,16 @@ from originator import Originator
 
 class Caretaker(object):
     def __init__(self) -> None:
-        self.states: List[Memento] = list()
+        self._states: List[Memento] = list()
 
     def save(self, state: Memento) -> None:
         print(f"Saving originator state with name = {state.get_state_name()}")
-        self.states.append(state)
+        self._states.append(state)
 
     def load(self) -> Memento:
         print(f"Loading previous originator state")
         try:
-            return self.states.pop()
+            return self._states.pop()
         except:
             print("Originator is in initial state")
 

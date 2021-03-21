@@ -12,7 +12,7 @@ class Originator(object):
         self._content_a = content_a
         self._content_b = content_b
 
-    def get_content(self) -> tuple:
+    def get_content(self) -> tuple[str,str]:
         return (self._content_a, self._content_b)
     
     def create_state(self) -> ConcreteMemento:
