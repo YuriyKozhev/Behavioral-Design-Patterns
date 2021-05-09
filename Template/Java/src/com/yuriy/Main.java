@@ -3,6 +3,7 @@ package com.yuriy;
 public class Main {
 
     public static void main(String[] args) {
-	// write your code here
+        new ConcreteClassA().execute();
+        new ConcreteClassB().execute();
     }
 }
