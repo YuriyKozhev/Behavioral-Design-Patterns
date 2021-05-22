@@ -6,3 +6,5 @@ Here's the list of currently implemented patterns
 - State
 - Iterator
 - Strategy
+- Template
+- Command
