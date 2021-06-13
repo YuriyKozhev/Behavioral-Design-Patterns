@@ -1,4 +1,4 @@
-package com.yuriy;
+package com.yuriy.standard_implementation;
 
 public class ConcreteMediator implements Mediator {
     private ConcreteColleagueA colleagueA;

@@ -1,4 +1,4 @@
-package com.yuriy;
+package com.yuriy.standard_implementation;
 
 public abstract class Colleague {
     protected final Mediator owner;

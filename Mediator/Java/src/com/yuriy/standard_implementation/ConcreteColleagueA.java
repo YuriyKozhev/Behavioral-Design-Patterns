@@ -1,4 +1,4 @@
-package com.yuriy;
+package com.yuriy.standard_implementation;
 
 public class ConcreteColleagueA extends Colleague {
     private int valueA;
