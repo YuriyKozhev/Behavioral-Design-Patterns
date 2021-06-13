@@ -8,3 +8,4 @@ Here's the list of currently implemented patterns
 - Strategy
 - Template
 - Command
+- Observer
