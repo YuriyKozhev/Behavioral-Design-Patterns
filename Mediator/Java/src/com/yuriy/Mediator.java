@@ -1,5 +1,5 @@
 package com.yuriy;
 
 public interface Mediator {
-    void mediate();
+    void mediate(Colleague colleague);
 }
