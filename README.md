@@ -9,3 +9,4 @@ Here's the list of currently implemented patterns
 - Template
 - Command
 - Observer
+- Chain of responsibility
