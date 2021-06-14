@@ -11,3 +11,4 @@ Here's the list of currently implemented patterns
 - Observer
 - Mediator
 - Chain of responsibility
+- Visitor
