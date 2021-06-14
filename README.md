@@ -1,5 +1,5 @@
-# DesignPatterns
-Design Patterns, implemented in Java and Python
+# Behavioral-Design-Patterns
+Behavioral Design Patterns, implemented in Java and Python
 
 Here's the list of currently implemented patterns 
 - Memento
