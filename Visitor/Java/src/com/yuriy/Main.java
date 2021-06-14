@@ -3,6 +3,10 @@ package com.yuriy;
 public class Main {
 
     public static void main(String[] args) {
-	// write your code here
+        Visitor visitor = new ConcreteVisitor();
+        Element elementA = new ConcreteElementA();
+        Element elementB = new ConcreteElementB();
+        elementA.accept(visitor);
+        elementB.accept(visitor);
     }
 }
